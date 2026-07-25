@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SALVO COLLECTION</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <h2>SALVO COLLECTION</h2>
+</div>
+
+<header class="header">
+<div class="offer-banner">
+    🔥 New Collection Available | Free Delivery Islandwide | Limited Time Offer 🔥
+</div>
+<div class="hours-banner">
+⏰ Online Store Open 24/7 | 🚚 Fast Delivery Available
+</div>
+<div class="logo">
+<img src="images/NEWLOGO1.png">
+SALVO COLLECTION
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Products</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>SALVO COLLECTION</h1>
+        <p>Premium Fashion & Baby Collection</p>
+        <button onclick="document.querySelector('.products').scrollIntoView()">
+            Shop Now 🛍️
+        </button>
+    </div>
+
+</section>
+
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+</div>
+<h2 class="title">
+✨ New Arrivals
+</h2>
+<div class="categories">
+
+<button onclick="filterProducts('all')">All</button>
+<button onclick="filterProducts('baby')">Baby</button>
+<button onclick="filterProducts('bag')">Bags</button>
+
+</div>
+<section class="products">
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/1784745617773.jpg" alt="Baby Dress" onclick="openPopup(this.src)">
+    <h2>Baby Dress</h2>
+    <p class="price">Rs. 3400</p>
+    <button onclick="addToCart('Baby Dress',3400)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/BABY1.jpg" alt="Baby Dress" onclick="openPopup(this.src)">
+    <h2>Baby Dress</h2>
+    <p class="price">Rs. 1400</p>
+    <button onclick="addToCart('Baby Dress',3400)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/BABY2.jpg" alt="Baby Dress" onclick="openPopup(this.src)">
+    <h2>Baby Dress</h2>
+    <p class="price">Rs. 1400</p>
+    <button onclick="addToCart('Baby Dress',3400)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/BABY3.jpg" alt="Baby Dress" onclick="openPopup(this.src)">
+    <h2>Baby Dress</h2>
+    <p class="price">Rs. 1400</p>
+    <button onclick="addToCart('Baby Dress',3400)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/TOWEL1.jpg" alt="Baby Towel" onclick="openPopup(this.src)">
+    <h2>BABY TOWEL</h2>
+    <p class="price">Rs. 800</p>
+    <button onclick="addToCart('BABY TOWEL',800)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/COAT1.jpg" alt="Coat Sheet" onclick="openPopup(this.src)">
+    <h2>COAT SHEET</h2>
+    <p class="price">Rs. 2200</p>
+    <button onclick="addToCart('COAT SHEET',2200)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/COAT2.jpg" alt="Coat Sheet" onclick="openPopup(this.src)">
+    <h2>COAT SHEET</h2>
+    <p class="price">Rs. 2200</p>
+    <button onclick="addToCart('COAT SHEET',2200)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product baby">
+    <span class="badge">NEW</span>
+    <img src="images/CASE1.jpg" alt="Baby Pillow Case" onclick="openPopup(this.src)">
+    <h2>BABY PILLOW CASE (Pack of 3)</h2>
+    <p class="price">Rs. 690</p>
+    <button onclick="addToCart('BABY PILLOW CASE (Pack of 3)',690)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+<div class="product bag">
+    <span class="badge">BEST SELLER</span>
+    <img src="images/1784745653497.jpg" alt="Teddy Bag" onclick="openPopup(this.src)">
+    <h2>Teddy Bag</h2>
+    <p class="price">Rs. 2400</p>
+    <button onclick="addToCart('Teddy Bag',2400)">🛒 Add to Cart</button>
+    <button onclick="window.location.href='product.html'">⚡ Buy Now</button>
+</div>
+
+</section>
+<section class="counter">
+
+<div>
+<h2 class="count" data-target="500">0</h2>
+<p>Happy Customers</p>
+</div>
+
+<div>
+<h2 class="count" data-target="100">0</h2>
+<p>Products</p>
+</div>
+
+<div>
+<h2 class="count" data-target="24">0</h2>
+<p>Online Service</p>
+</div>
+
+</section>
+<section class="customer">
+
+<h2>Customer Details</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="tel" id="phone" placeholder="Phone Number">
+
+<textarea id="address" placeholder="Delivery Address"></textarea>
+
+<label>Delivery Area</label>
+
+<select id="delivery">
+    <option value="350">Monaragala - Rs.350</option>
+    <option value="45">Ampara- Rs .450</option>Ampara</option>
+    <option value="500">Kandy - Rs.450</option>
+    <option value="600">Other Areas -450</option>
+</select>
+
+<p id="deliveryPrice">Delivery: Rs.350</p>
+
+<p style="color:gold;font-weight:bold;">
+💵 Cash on Delivery Available
+</p>
+
+<button onclick="sendOrder()">📲 WhatsApp Order</button>
+
+<button onclick="viewCart()">🛒 View Cart</button>
+
+</section>
+
+<footer>
+    <h3>SALVO COLLECTION</h3>
+    <p>📍 14 Mile Post, Bakinigahawela, Bible Road</p>
+    <p>📞 0783456345</p>
+</footer>
+
+<script src="script.js"></script>
+<!-- Image Popup -->
+<div id="popup" class="popup" onclick="closePopup()">
+    <img id="popupImg">
+</div>
+<a href="https://wa.me/94783456345" class="whatsapp" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+  <div id="toast" class="toast"></div>
+<div id="discountPopup" class="discount-popup">
+
+    <div class="discount-box">
+        <span onclick="closeDiscount()">✖</span>
+
+        <h2>🎉 Welcome!</h2>
+        <h1>10% OFF</h1>
+        <p>Your first order discount coupon</p>
+
+        <div class="coupon">
+            SALVO10
+        </div>
+
+        <button onclick="closeDiscount()">
+            Start Shopping 🛍️
+        </button>
+
+    </div>
+
+</div>
+<div class="snow"></div>
+  <button id="themeBtn">🌙 Dark</button>
+  <div id="cursor"></div>
+  
+</body>
+</html>
